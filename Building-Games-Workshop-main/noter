@@ -1,0 +1,36 @@
+/*
+function drawClassroom:
+
+noter til migselv:
+tableWidth og tableHeight er størrelsen på bordene
+spacing er afstanden mellem bordene 
+startX og startY er startpositionen for bordene
+row og col er antal rækker og kolonner
+x og y er positionen for bordene
+lavet en for loop istedet for at selv lave
+hvert row. 
+let row = 0; starter for den første række
+row < 4; stopper ved 4 rækker
+row++ tæller 1 op for hver række 
+der bliver lavet et condition tjek, så den kører så længe row er mindre end 4
+det samme for
+let col = 0; starter for den første kolonne
+col < 3; stopper ved 3 kolonner
+col++ tæller 1 op for hver kolonne
+
+let variablerne flyttet op i starten
+old code:
+
+/*
+copilot hjalp i drawClassroom:
+
+function drawClassroom() {
+    for (let row = 0; row < 4; row++) { // Loop through each row (4 rows in total)
+      for (let col = 0; col < 3; col++) { // Loop through each column (3 columns in total)
+        let x = startX + col * (tableWidth + spacing); // Calculate the X position for the current table
+        let y = startY + row * (tableHeight + spacing); // Calculate the Y position for the current table
+        fill(150); // Set the fill color for the table (gray)
+        rect(x, y, tableWidth, tableHeight); // Draw the table as a rectangle at the calculated position
+      }
+    }
+*/
